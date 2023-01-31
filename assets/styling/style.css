@@ -4,61 +4,108 @@ body#page2{background-color: #e73c7e;}
 body#page3{background-color: #23a6d5;}
 
 /* Global Nav Bar */
-ul {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #333;
+body {
+  margin: 0;
 }
 
-li {
-  float: left;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 li a {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  padding: 8px 16px;
+  width: 75%;
   text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+li a.active {
+  background-color: rgb(200, 173, 22);
+  color: white;
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #555;
+  color: white;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-width: 100%;
+.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  
 }
 
-@media only screen and (min-width: 600px) {
-/* For tablets: */
-.col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
-.col-s-3 {width: 25%;}
-.col-s-4 {width: 33.33%;}
-.col-s-5 {width: 41.66%;}
-.col-s-6 {width: 50%;}
-.col-s-7 {width: 58.33%;}
-.col-s-8 {width: 66.66%;}
-.col-s-9 {width: 75%;}
-.col-s-10 {width: 83.33%;}
-.col-s-11 {width: 91.66%;}
-.col-s-12 {width: 100%;}
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
 }
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+    margin: 1rem;
+  }
+}
+
+/* About Page */
