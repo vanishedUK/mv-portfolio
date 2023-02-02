@@ -2,13 +2,21 @@
 body#page1{background-color: #ee7752;}
 body#page2{background-color: #e73c7e;}
 body#page3{background-color: #23a6d5;}
+/* Spacer */
+
+
+
+
+
+
+
 
 /* Global Nav Bar */
 body {
   margin: 0;
 }
 
-ul {
+header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -20,7 +28,7 @@ ul {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-li a {
+header li a {
   display: block;
   margin-top: 0.5rem;
   margin-left: auto;
@@ -33,12 +41,12 @@ li a {
   text-align: center;
 }
 
-li a.active {
+header li a.active {
   background-color: rgb(200, 173, 22);
   color: white;
 }
 
-li a:hover:not(.active) {
+header li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
@@ -96,6 +104,14 @@ li a:hover:not(.active) {
 .mobile-menu li {
   margin-bottom: 10px;
 }
+/* Spacer */
+
+
+
+
+
+
+
 
 /* About Section */
 .about-container {
@@ -137,19 +153,223 @@ li a:hover:not(.active) {
 .p-card .c-3 {
   margin-left: 0.3rem;
 }
+/* Spacer */
 
-#card-languages {
-  display: block;
-  background-color: white;
-  border-radius: 5px;
-  width: 15vw;
-  margin-left: 15%;
+
+
+
+
+
+
+
+/* Experience Section */
+.experience-container {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  margin-left: 30%;
+  padding: 1px 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  color: #292d3e;
 }
 
-.t-1 {
-  margin-left: 1rem;
+.e-card {
+  background-color: #f1f1f1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 0.5rem;
+  align-items: center;
+  margin-top: 0.5px;
 }
 
+.e-card:hover {
+  box-shadow: 15px 15px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-1 {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-3 {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  text-align: center;
+  justify-content: align-items;
+}
+
+#design-list,
+#dev-list,
+#marketing-list {
+  list-style: none;
+}
+
+#design-list li, #dev-list li, #marketing-list li {
+  margin-right: 2.3rem;
+}
+
+.experience-container .c-1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.experience-container .c-2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+
+
+#title-1-1,
+#title-2-1,
+#title-3-1 {
+  font-family: "eurostile", sans-serif;
+  font-weight: 800;
+  color: #141c3a;
+}
+
+#title-1-2,
+#title-2-2,
+#title-3-2 {
+  font-family: "eurostile", sans-serif;
+  font-weight: 400;
+  color: #6E07F3;
+}
+/* Spacer */
+
+
+
+
+
+
+
+
+
+/* Portfolio Section */
+.img-container {
+  display: inline-block;
+  width: 100%;
+  padding: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: inset;
+  margin-bottom: 0.5rem;
+}
+
+.img {
+  height: 8rem;
+}
+
+.img-container:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.sd {
+  background: linear-gradient(-45deg, #c60138, #23a6d5, #A607CF);
+}
+
+.talensi {
+  background: linear-gradient(-45deg, #1fabad, #fff);
+}
+
+.jcb {
+  background: linear-gradient(-45deg, #fff, #fcae26, #000);
+}
+
+.barclays {
+  background: linear-gradient(-45deg, #1ec1f2, #fff, #0179a6);
+}
+
+.left, .right {
+  box-shadow: 15px 15px 20px 0 rgba(0, 0, 0, 0.2);
+}
+/* Spacer */
+
+
+
+
+
+
+
+
+
+
+/* Global Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.8rem;
+  color: white;
+  font-family: sans-serif;
+  background-color: #292d3e;
+  margin-top: auto;
+  width: auto;
+  font-size: 1.5rem;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer > a {
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 3px solid white;
+  padding: 1rem;
+  padding-right: 1.7rem;
+  padding-left: 1.7rem;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  transition: all 0.5s;
+  background-color: rgb(113, 202, 232);
+  border: 3px solid rgb(113, 202, 232);
+}
+/* Spacer */
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
 @media only screen and (max-width: 1250px) {
   header nav {
     display: none;
@@ -165,4 +385,12 @@ li a:hover:not(.active) {
     width: 80%;
     margin-left: 0;
   }
+
+  .experience-container {
+    display: block;
+    width: 80%;
+    margin-left: 0;
+  }
+
+
 }

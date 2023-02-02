@@ -6,35 +6,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ethan Steele - Portfolio</title>
         <link rel="stylesheet" href="assets\styling\style.css">
+        <link rel="shortcut icon" type="image/png" href="assets\images\favicon.png"/>
     </head>
 
     <body id="page3">
         <header>
             <nav id="nav">
-                <ul>
-                    <li><a href="index.html" class="name">Ethan Steele</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="portfolio.html" class="active"">Portfolio</a></li>
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="index.html" class="name">Ethan Steele</a></li>
+                    <li class="nav-li"><a href="about.html">About</a></li>
+                    <li class="nav-li"><a href="experience.html">Experience</a></li>
+                    <li class="nav-li"><a href="portfolio.html" class="active">Portfolio</a></li>
                 </ul>
             </nav>
+
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
                 <div class="bar4"></div>
                 <ul class="mobile-menu">
-                    <li><a href="index.html" class="name">Ethan Steele</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li class="nav-li"><a href="index.html" class="name">Ethan Steele</a></li>
+                    <li class="nav-li"><a href="about.html">About</a></li>
+                    <li class="nav-li"><a href="experience.html">Experience</a></li>
+                    <li class="nav-li"><a href="portfolio.html" class="active">Portfolio</a></li>
                 </ul>
               </div>
         </header>
         <script src="index.js"></script>
         
         <main>
-            
+            <div class="experience-container">
+                <h1 class="c-1">Companies I've worked with</h1>
+                <h3 class="c-2">Embark on a journey through my employment experiences, highlighting my professional development and proud accomplishments. Follow my story and gain insights into my growth, and be motivated to craft your own career path.</h3>
+                <div class="img-container sd left">
+                    <a href="https://spacedelta.net "><img class="img" src="assets\images\sd-logo.png" alt="spacedelta logo"></a>
+                </div>
+                <div class="img-container talensi right">
+                    <a href="https://talensi.net"><img class="img" src="assets\images\talensi-logo.png" alt="talensi logo"></a>
+                </div>
+                <div class="img-container jcb left">
+                    <a href="https://jcb.com"><img class="img" src="assets\images\jcb-logo.png" alt="jcb logo"></a>
+                </div>
+                <div class="img-container barclays right">
+                    <a href="https://barclays.com"><img class="img" src="assets\images\barclays-logo.png" alt="barclays logo"></a>
+                </div>                   
         </main>
     </body>
 
