@@ -258,7 +258,7 @@ header li a:hover:not(.active) {
 /* Portfolio Section */
 .img-container {
   display: inline-block;
-  width: 100%;
+  width: 90%;
   padding: 2.5rem;
   align-items: center;
   justify-content: center;
